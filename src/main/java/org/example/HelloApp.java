@@ -1,14 +1,13 @@
 package org.example;
-
 public class HelloApp {
     public static void main(String[] args) {
-        //UC4
-        String names;
-        if (args.length > 0) {
-            names = String.join(", ", args);
+        //UC7
+        String result;
+        if (args.length == 0) {
+            result = "World";
         } else {
-            names = "World";
+            result = String.join(", ", args);
         }
-        System.out.println("Hello, " + names + "!");
+        System.out.println("Hello, " + result + "!");
     }
 }
